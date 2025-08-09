@@ -26,10 +26,17 @@
     }
  
     
-    // Ensure image view is set up for centering
+    // Set up image view for full screen display
     if (self.imageView) {
         self.imageView.imageAlignment = NSImageAlignCenter;
-        self.imageView.imageScaling = NSImageScaleNone; // We'll handle sizing manually
+        self.imageView.imageScaling = NSImageScaleAxesIndependently; // Scale to fill view completely
+        
+        // Force imageView to fill the entire view by disabling auto layout constraints
+        self.imageView.translatesAutoresizingMaskIntoConstraints = YES;
+        
+        // Set initial frame to full view bounds
+        self.imageView.frame = self.bounds;
+        NSLog(@"DEBUG: Initial imageView frame set to: %fx%f", self.bounds.size.width, self.bounds.size.height);
     }
     
     // Set up frame change notifications
@@ -68,10 +75,11 @@
     }
     
     NSSize viewSize = _imageView.bounds.size;
-    int resolution = [self calculateOptimalResolution:viewSize];
+    NSLog(@"DEBUG: Rendering at exact screen dimensions: %dx%d", (int)viewSize.width, (int)viewSize.height);
     
     double renderTime;
-    _imageView.image = [renderer renderWithWidth:resolution height:resolution renderTime:&renderTime];
+    _imageView.image = [renderer renderWithWidth:(int)viewSize.width height:(int)viewSize.height renderTime:&renderTime];
+    NSLog(@"DEBUG: Rendered image size: %fx%f", _imageView.image.size.width, _imageView.image.size.height);
     [self updateRenderTimeDisplay:renderTime];
     [self updateInfoPanel];
     
@@ -86,10 +94,10 @@
     renderer.topRight = initialTopRight;
     
     NSSize viewSize = _imageView.bounds.size;
-    int resolution = [self calculateOptimalResolution:viewSize];
+    NSLog(@"DEBUG: Refreshing at exact screen dimensions: %dx%d", (int)viewSize.width, (int)viewSize.height);
     
     double renderTime;
-    _imageView.image = [renderer renderWithWidth:resolution height:resolution renderTime:&renderTime];
+    _imageView.image = [renderer renderWithWidth:(int)viewSize.width height:(int)viewSize.height renderTime:&renderTime];
     [self updateRenderTimeDisplay:renderTime];
     [self updateInfoPanel];
     }
@@ -248,26 +256,27 @@
     
     self.infoPanel.hidden = !showInfoPanel;
     
-    // Get the container view bounds
+    // Get the full window bounds - this is the key fix
     NSRect containerBounds = self.bounds;
+    NSLog(@"DEBUG: Container bounds: %fx%f", containerBounds.size.width, containerBounds.size.height);
     
     // Reserve space for info panel on the right side if it's visible
     CGFloat infoPanelWidth = showInfoPanel ? 250 : 0;
     CGFloat availableWidth = containerBounds.size.width - infoPanelWidth - (showInfoPanel ? 20 : 0); // 20px margin if panel is shown
     CGFloat availableHeight = containerBounds.size.height;
     
-    // Calculate the square size using the smaller available dimension
-    CGFloat minDimension = fmin(availableWidth, availableHeight);
-    
-    // Create square frame, left-aligned in available space
+    // Use full available space instead of forcing square dimensions
     NSRect imageFrame = NSMakeRect(
-        (availableWidth - minDimension) / 2.0,  // Center in available width
-        (availableHeight - minDimension) / 2.0, // Center vertically
-        minDimension,
-        minDimension
+        0,  // Start at left edge
+        0,  // Start at bottom edge
+        availableWidth,  // Use full available width
+        availableHeight  // Use full available height
     );
     
-    // Update image view frame
+    NSLog(@"DEBUG: Setting imageView frame to: %fx%f", imageFrame.size.width, imageFrame.size.height);
+    
+    // Force the imageView to use the full frame regardless of storyboard constraints
+    self.imageView.translatesAutoresizingMaskIntoConstraints = YES;
     self.imageView.frame = imageFrame;
     
 
