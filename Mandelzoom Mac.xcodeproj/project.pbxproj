@@ -214,9 +214,9 @@
 			<key>isa</key>
 			<string>PBXNativeTarget</string>
 			<key>name</key>
-			<string>Mandelzoom-MacOS-ObjC</string>
+			<string>Mandelzoom Mac</string>
 			<key>productName</key>
-			<string>Mandelzoom-MacOS-ObjC</string>
+			<string>Mandelzoom Mac</string>
 			<key>productReference</key>
 			<string>350E5F022690EFB200967E1D</string>
 			<key>productType</key>
@@ -231,7 +231,7 @@
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>path</key>
-			<string>Mandelzoom-MacOS-ObjC.app</string>
+			<string>Mandelzoom Mac.app</string>
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
@@ -283,7 +283,7 @@
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>path</key>
-			<string>Mandelzoom-MacOS-ObjC</string>
+			<string>Mandelzoom Mac</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -432,7 +432,7 @@
 			<key>lastKnownFileType</key>
 			<string>text.plist.entitlements</string>
 			<key>path</key>
-			<string>Mandelzoom_MacOS_ObjC.entitlements</string>
+			<string>MandelzoomMac.entitlements</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -674,7 +674,7 @@
 				<key>ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME</key>
 				<string>AccentColor</string>
 				<key>CODE_SIGN_ENTITLEMENTS</key>
-				<string>Mandelzoom-MacOS-ObjC/Mandelzoom_MacOS_ObjC.entitlements</string>
+				<string>Mandelzoom Mac/MandelzoomMac.entitlements</string>
 				<key>CODE_SIGN_IDENTITY</key>
 				<string>-</string>
 				<key>CODE_SIGN_STYLE</key>
@@ -686,7 +686,7 @@
 				<key>ENABLE_HARDENED_RUNTIME</key>
 				<string>YES</string>
 				<key>INFOPLIST_FILE</key>
-				<string>Mandelzoom-MacOS-ObjC/Info.plist</string>
+				<string>Mandelzoom Mac/Info.plist</string>
 				<key>LD_RUNPATH_SEARCH_PATHS</key>
 				<array>
 					<string>$(inherited)</string>
@@ -695,7 +695,7 @@
 				<key>MACOSX_DEPLOYMENT_TARGET</key>
 				<string>12.2</string>
 				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.sepoysoftware.Mandelzoom-MacOS-ObjC</string>
+				<string>com.sepoysoftware.MandelzoomMac</string>
 				<key>PRODUCT_NAME</key>
 				<string>$(TARGET_NAME)</string>
 			</dict>
@@ -713,7 +713,7 @@
 				<key>ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME</key>
 				<string>AccentColor</string>
 				<key>CODE_SIGN_ENTITLEMENTS</key>
-				<string>Mandelzoom-MacOS-ObjC/Mandelzoom_MacOS_ObjC.entitlements</string>
+				<string>Mandelzoom Mac/MandelzoomMac.entitlements</string>
 				<key>CODE_SIGN_IDENTITY</key>
 				<string>-</string>
 				<key>CODE_SIGN_STYLE</key>
@@ -725,7 +725,7 @@
 				<key>ENABLE_HARDENED_RUNTIME</key>
 				<string>YES</string>
 				<key>INFOPLIST_FILE</key>
-				<string>Mandelzoom-MacOS-ObjC/Info.plist</string>
+				<string>Mandelzoom Mac/Info.plist</string>
 				<key>LD_RUNPATH_SEARCH_PATHS</key>
 				<array>
 					<string>$(inherited)</string>
@@ -734,7 +734,7 @@
 				<key>MACOSX_DEPLOYMENT_TARGET</key>
 				<string>12.2</string>
 				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.sepoysoftware.Mandelzoom-MacOS-ObjC</string>
+				<string>com.sepoysoftware.MandelzoomMac</string>
 				<key>PRODUCT_NAME</key>
 				<string>$(TARGET_NAME)</string>
 			</dict>

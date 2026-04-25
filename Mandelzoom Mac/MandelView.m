@@ -1,5 +1,5 @@
 //  MandelView.m
-//  Mandelzoom-MacOS-ObjC
+//  Mandelzoom Mac
 
 #import "MandelView.h"
 #import "MandelRenderer.h"

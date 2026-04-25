@@ -1,6 +1,6 @@
 //
 //  MandelView.h
-//  Mandelzoom-MacOS-ObjC
+//  Mandelzoom Mac
 //
 //  Created by Rajib Singh on 7/4/21.
 //

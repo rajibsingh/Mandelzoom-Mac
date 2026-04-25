@@ -1,6 +1,6 @@
 //
 //  BookmarkManager.h
-//  Mandelzoom-MacOS-ObjC
+//  Mandelzoom Mac
 //
 //  Manages persistence and retrieval of Mandelbrot bookmarks
 //

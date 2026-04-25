@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  Mandelzoom-MacOS-ObjC
+//  Mandelzoom Mac
 //
 //  Created by Rajib Singh on 7/3/21.
 //

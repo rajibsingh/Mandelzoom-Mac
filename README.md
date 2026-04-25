@@ -1,4 +1,4 @@
-# Mandelzoom-MacOS-ObjC
+# Mandelzoom Mac
 
 Generate a classic Mandelbrot set on the mac using objective c.
 

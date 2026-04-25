@@ -6,10 +6,10 @@ This file provides guidance to Gemini when working with code in this repository.
 This is a macOS application written in Objective-C that generates and displays the Mandelbrot set with interactive zooming capabilities. The application uses complex number mathematics to render the fractal and provides a visual selection interface for zooming into specific regions. It also features GPU acceleration using Metal.
 
 ## Build Commands
-- **Build and run**: Open `Mandelzoom-MacOS-ObjC.xcodeproj` in Xcode and use Cmd+R to build and run
+- **Build and run**: Open `Mandelzoom Mac.xcodeproj` in Xcode and use Cmd+R to build and run
 - **Build only**: Use Xcode's Product → Build (Cmd+B) or `xcodebuild` from command line:
   ```bash
-  xcodebuild -project Mandelzoom-MacOS-ObjC.xcodeproj -scheme Mandelzoom-MacOS-ObjC build
+  xcodebuild -project "Mandelzoom Mac.xcodeproj" -scheme "Mandelzoom Mac" build
   ```
 - **Clean build**: Product → Clean Build Folder (Cmd+Shift+K) in Xcode
 

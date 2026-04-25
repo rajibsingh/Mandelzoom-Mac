@@ -1,6 +1,6 @@
 //
 //  MandelbrotShader.metal
-//  Mandelzoom-MacOS-ObjC
+//  Mandelzoom Mac
 //
 //  Metal compute shader for high-performance Mandelbrot rendering on Apple Silicon
 //

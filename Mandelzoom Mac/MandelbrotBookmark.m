@@ -1,6 +1,6 @@
 //
 //  MandelbrotBookmark.m
-//  Mandelzoom-MacOS-ObjC
+//  Mandelzoom Mac
 //
 
 #import "MandelbrotBookmark.h"

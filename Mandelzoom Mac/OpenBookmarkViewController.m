@@ -1,6 +1,6 @@
 //
 //  OpenBookmarkViewController.m
-//  Mandelzoom-MacOS-ObjC
+//  Mandelzoom Mac
 //
 
 #import "OpenBookmarkViewController.h"

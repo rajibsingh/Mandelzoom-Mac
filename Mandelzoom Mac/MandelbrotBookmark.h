@@ -1,6 +1,6 @@
 //
 //  MandelbrotBookmark.h
-//  Mandelzoom-MacOS-ObjC
+//  Mandelzoom Mac
 //
 //  Represents a saved Mandelbrot view bookmark with coordinates and metadata
 //

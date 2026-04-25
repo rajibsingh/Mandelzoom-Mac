@@ -1,6 +1,6 @@
 //
 //  AddBookmarkViewController.h
-//  Mandelzoom-MacOS-ObjC
+//  Mandelzoom Mac
 //
 //  View controller for adding new bookmarks
 //

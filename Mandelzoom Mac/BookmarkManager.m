@@ -1,6 +1,6 @@
 //
 //  BookmarkManager.m
-//  Mandelzoom-MacOS-ObjC
+//  Mandelzoom Mac
 //
 
 #import "BookmarkManager.h"
@@ -36,7 +36,7 @@
     NSString *documentsDirectory = [documentsDirectories firstObject];
     
     // Create app-specific directory
-    NSString *appSupportDir = [documentsDirectory stringByAppendingPathComponent:@"Mandelzoom-MacOS-ObjC"];
+    NSString *appSupportDir = [documentsDirectory stringByAppendingPathComponent:@"Mandelzoom Mac"];
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
     if (![fileManager fileExistsAtPath:appSupportDir]) {

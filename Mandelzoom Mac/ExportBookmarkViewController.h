@@ -1,6 +1,6 @@
 //
 //  ExportBookmarkViewController.h
-//  Mandelzoom-MacOS-ObjC
+//  Mandelzoom Mac
 //
 //  View controller for selecting and exporting a bookmark
 //

@@ -1,6 +1,6 @@
 //
 //  OpenBookmarkViewController.h
-//  Mandelzoom-MacOS-ObjC
+//  Mandelzoom Mac
 //
 //  View controller for viewing and opening saved bookmarks
 //

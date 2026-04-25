@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  Mandelzoom-MacOS-ObjC
+//  Mandelzoom Mac
 //
 //  Created by Rajib Singh on 7/3/21.
 //
@@ -128,7 +128,7 @@
     [appMenu addItem:[NSMenuItem separatorItem]];
     
     // Add Quit menu item to app menu
-    NSMenuItem *quitMenuItem = [[NSMenuItem alloc] initWithTitle:@"Quit Mandelzoom-MacOS-ObjC"
+    NSMenuItem *quitMenuItem = [[NSMenuItem alloc] initWithTitle:@"Quit Mandelzoom Mac"
                                                           action:@selector(terminate:)
                                                    keyEquivalent:@"q"];
     quitMenuItem.target = NSApp;
@@ -520,7 +520,7 @@
     
     NSDictionary *exportData = @{
         @"version": @"1.0",
-        @"application": @"Mandelzoom-MacOS-ObjC",
+        @"application": @"Mandelzoom Mac",
         @"exportDate": [[NSDate date] description],
         @"bookmarks": @[bookmarkDict]
     };

@@ -1,6 +1,6 @@
 //
 //  ExportBookmarkViewController.m
-//  Mandelzoom-MacOS-ObjC
+//  Mandelzoom Mac
 //
 
 #import "ExportBookmarkViewController.h"
